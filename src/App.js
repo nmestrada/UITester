@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 //import logo from './logo.svg';
-import './App.css';
+//import './App.css';
 import axios from 'axios';
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
            <a href="https://reactjs.org">link</a>
            <a href="https://reactjs.org">link</a>
        </nav>
-        <div className="body">
+        <div className="body mx-auto my-12 items-center">
             <h2>Todos List</h2>
             <div>
                 {todos.map(todo => <div key={todo.id}>
