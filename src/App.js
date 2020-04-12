@@ -18,17 +18,20 @@ function App() {
   }, [todos])
   return (
     <div className="app">
-       <nav>
+       <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
            <p>Simple Nav Bar Title</p>
+           <div className="w-full mx-5 block flex-grow lg:flex lg:items-center lg:w-auto">
            <a href="https://reactjs.org">link</a>
            <a href="https://reactjs.org">link</a>
            <a href="https://reactjs.org">link</a>
+           </div>
        </nav>
-        <div className="body mx-auto my-12 items-center">
-            <h2>Todos List</h2>
+        <div className="flex flex-col container mx-auto my-12 px-6 items-center justify-center">
+            <h2 className="text-center">Todos List</h2>
             <div>
-                {todos.map(todo => <div key={todo.id}>
-                <p>{todo.title}</p>
+                {todos.map(todo => 
+                <div key={todo.id} className ="bg-white border rounded-lg p-4 my-5">
+                    <p>Title: <strong>{todo.title}</strong></p>
                 </div>)}
             </div>
         </div>

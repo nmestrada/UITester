@@ -606,11 +606,6 @@ video {
   }
 }
 
-body {
-  background-color: #4299e1;
-  padding: 3rem;
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
