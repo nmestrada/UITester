@@ -1,14 +1,19 @@
-# UI libraries in React
-## Curious to test different UI libraries
+# Testing UI libraries / frameworks in React
+
 ### They will be listed here and have separate branches for the same simple application
 **Libraries**
 - Tailwind CSS
-- Material UI
 - Materialize
+- Material UI
 - Semantic UI
 - Bulma
-- Styled Components
-- Others to come
+- Foundation
+- UIKit
+- Susy
+- Pure
+- Skeleton
+- Miligram
+
 
 ## Will use `create-react-app` as a base
 ## Deployed
