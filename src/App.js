@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="app">
        <nav>
-           <p>Simple Nav Bar Title</p>
+           <p>NavBar Title</p>
            <a href="https://reactjs.org">link</a>
            <a href="https://reactjs.org">link</a>
            <a href="https://reactjs.org">link</a>
