@@ -7,6 +7,7 @@
 - Material UI
 - Semantic UI
 - Bulma
+- Style Components
 - Foundation
 - UIKit
 - Susy
