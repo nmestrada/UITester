@@ -18,16 +18,20 @@ function App() {
   }, [todos])
   return (
     <div className="app">
-       <nav>
-           <p>NavBar Title</p>
-           <a href="https://reactjs.org">link</a>
-           <a href="https://reactjs.org">link</a>
-           <a href="https://reactjs.org">link</a>
+       <nav className="navbar is-fixed-top">
+           <div className="navbar-brand">
+               <p className="navbar-item">NavBar Title</p>
+           </div>
+           <div className="navbar-menu">
+            <a className="navbar-item" href="https://reactjs.org">link</a>
+            <a className="navbar-item" href="https://reactjs.org">link</a>
+            <a className="navbar-item" href="https://reactjs.org">link</a>
+           </div>
        </nav>
-        <div className="body">
+        <div className="container">
             <h2>Todos List</h2>
             <div>
-                {todos.map(todo => <div key={todo.id}>
+                {todos.map(todo => <div className="box" key={todo.id}>
                 <p>{todo.title}</p>
                 </div>)}
             </div>
