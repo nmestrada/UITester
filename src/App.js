@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 //import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
-import {Menu} from 'react-foundation'
+import { Menu } from 'react-foundation'
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -28,7 +28,7 @@ function App() {
         <div className="body margin-top-2">
             <h2>Todos List</h2>
             <div>
-                {todos.map(todo => <div key={todo.id}>
+                {todos.map(todo => <div className="card"key={todo.id}>
                 <p>{todo.title}</p>
                 </div>)}
             </div>
