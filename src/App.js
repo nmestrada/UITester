@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 //import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
+import {Menu} from 'react-foundation'
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -18,13 +19,13 @@ function App() {
   }, [todos])
   return (
     <div className="app">
-       <nav>
+       <Menu className="position-fixed-top">
            <p>NavBar Title</p>
            <a href="https://reactjs.org">link</a>
            <a href="https://reactjs.org">link</a>
            <a href="https://reactjs.org">link</a>
-       </nav>
-        <div className="body">
+       </Menu>
+        <div className="body margin-top-2">
             <h2>Todos List</h2>
             <div>
                 {todos.map(todo => <div key={todo.id}>

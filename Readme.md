@@ -15,6 +15,8 @@
 - Skeleton
 - Miligram
 
+##Foundation
+React agnostic, there is a library react-foundation. It uses class names like Bootstrap. The react library uses components. It is a really extensive framework. 
 
 ## Will use `create-react-app` as a base
 ## Deployed
