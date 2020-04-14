@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 //import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
+import { Container, Menu, Item} from 'semantic-ui-react'
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -18,20 +19,24 @@ function App() {
   }, [todos])
   return (
     <div className="app">
-       <nav>
-           <p>NavBar Title</p>
-           <a href="https://reactjs.org">link</a>
-           <a href="https://reactjs.org">link</a>
-           <a href="https://reactjs.org">link</a>
-       </nav>
-        <div className="body">
+       <Menu fixed="top">
+           <Menu.Item
+            name="Navbar Title"
+           />
+           <Menu.Item
+            name="Link"
+           />
+           <Menu.Item><a href="https://reactjs.org">link</a></Menu.Item>
+           <Menu.Item><a href="https://reactjs.org">link</a></Menu.Item>
+       </Menu>
+        <Container className="body">
             <h2>Todos List</h2>
-            <div>
-                {todos.map(todo => <div key={todo.id}>
-                <p>{todo.title}</p>
-                </div>)}
-            </div>
-        </div>
+            <Item.Group divided>
+                {todos.map(todo => <Item key={todo.id}>
+                <Item.Content>{todo.title}</Item.Content>
+                </Item>)}
+            </Item.Group>
+        </Container>
     </div>
   );
 }
