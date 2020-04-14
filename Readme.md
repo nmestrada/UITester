@@ -23,6 +23,7 @@ Instructions:
 ```npm install --save -dev semantic-ui-css```
 
 add this to your index.js or react entry point : `import 'semantic-ui-css/semantic.min.css'`
+
 ## Will use `create-react-app` as a base
 ## Deployed
 coming soon 
